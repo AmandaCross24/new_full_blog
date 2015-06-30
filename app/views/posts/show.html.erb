@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Posts
+	</title>
+</head>
+<body>
+	<% if @user = User.find(params[:id]) %>
+
+<% @post.each do |post| %>
+<div id="post_content">
+	<%= post.title %>
+<p class="date">
+	submitted <%= time_ago_in_words(post.created_at) %> Ago.
+</p>
+<p class="post">
+	<%= post.post %>
+	| <%= link_to 'Edit', edit_post_path(post.id) %>
+	| <%= link_to 'Delete', destroy_post_path(post.id), method: :delete %>
+</p>
+<div class="comments">
+	<h3>Add a comment</h3>
+	
+</div>
+	<% end %>
+	
+	<% else %>
+
+	<%= flash[:alert] = "There was a problem displaying your posts" %>
+
+	<% end %>
+
+</div>
+
+</body>
+</html>

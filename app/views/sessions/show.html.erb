@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Welcome back!
+		</title>
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1>Welcome back <%="#{@user.fname}"%>!</h1>
+		</header>
+
+		<div class="main">
+
+			<div class="logout">
+				<%= link_to("Log out", session_path(session.id), method: :delete) %> |
+			</div>
+
+			<div class="body">
+	 			<%= link_to "Feed Your Brain", posts_path %> |	
+	 			<%= link_to "Your Posts", post_path %> |	
+	 		</div>
+
+ 		</div>
+
+
+		<div class="users">
+
+
+
+ 			<%= link_to(  "Delete Your Account", user_path(@user.id), method: :delete) %> |
+
+ 			<%= link_to(  "Edit Your Account", edit_user_path, method: :get) %> |
+
+		
+		</div>
+
+		<div class="sidebar">
+			<ul>
+				<li class="category"> Social</li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Instagram</a></li>
+				<li><a href="#">Github</a></li>
+				<li><a href="mailto:dhamtsik@gmail.com">Email</a></li>
+				</ul>
+		</div>
+
+		<div class="picture">
+			<%= image_tag("thinker.jpg")  %>
+		</div>
+
+
+
+	</body>
+
+</html>
+	
+	
+	
+		
+
+
+	

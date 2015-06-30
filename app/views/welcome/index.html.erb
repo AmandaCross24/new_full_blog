@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brain Food</title>
+	</head>
+
+	<body>
+
+
+		<div class="toolbar">
+		<header>
+		<div class="title">
+		<h2>Brain Food!</h2>		
+		</div>
+
+		<div class="nav">
+
+		<nav>
+			
+			
+				
+				<%= link_to 'Create an Account', new_user_path %> |
+				<%= link_to 'Sign-in', new_session_path %>
+
+				 </nav>
+			</div>
+		</header>
+	</div>
+
+	<div class="main">
+		<div class="about">
+		<p>Welcome to Brain food! Here users can post articles that are informative, thought-provoking, or simply interesting--articles that feed your brain!  But don't just stop at sharing articles! Create an account at Brain Food.  Then, feel free to add your own thoughts and discuss with others!
+		</p>
+		</div>
+
+		<div class="brain">
+		<%= image_tag("http://cdn.vectorstock.com/i/composite/80,89/healthy-brain-food-cartoon-vector-1548089.jpg", :alt => "rss feed") %>
+		</div>
+	</div>
+	
+	</body>
+
+</html>

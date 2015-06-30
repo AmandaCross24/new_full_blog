@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign-up!</title>
+	</head>
+
+	<body>
+	<div class="form">
+	<header>	
+		<h2>Sign up Below!</h2>
+	</header>
+</div>
+
+	<div class="sign_up">
+	
+	<%= form_for User.new do |f| %>
+	
+	<p>
+	  <%=f.label :username %>
+	  <%=f.text_field :username %>
+	</p>
+
+	<p>
+	  <%=f.label :password %>
+	  <%=f.password_field :password %>
+	</p>
+
+	<p>
+	  <%=f.label :fname %>
+	  <%=f.text_field :fname %>
+	</p>
+
+	<p>
+	  <%=f.label :lname %>
+	  <%=f.text_field :lname %>
+	</p>
+
+	<p>
+	  <%=f.label :email %>
+	  <%=f.email_field :email %>
+	</p>
+
+	<p>
+	  <%=f.label :birthday %>
+	  <%=f.date_field :birthday %>
+	</p>
+
+	<p>
+	  <%=f.submit :create %>
+	</p>
+
+	</div>
+
+	<% end %>
+
+	<%= link_to 'Home', root_path %> 
+
+	</body>
+</html>

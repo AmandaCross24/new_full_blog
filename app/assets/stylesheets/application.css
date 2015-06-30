@@ -1,0 +1,204 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body {
+background-color: #FFD6D6;
+}
+
+
+.title {
+	margin-top: 25px;
+	float: left;
+	font-size: 40px;
+	text-align: center;
+	position: fixed;
+	}
+
+.nav {
+	margin-top: 25px;
+	float: right;
+	font-size: 18px;
+	margin-right: 50px;
+}
+
+.toolbar {
+	font-family: Arial, sans-serif;
+	color: #FFFFFF;
+	margin-bottom: 30px;
+}
+
+.about { 
+	float: left;
+	color: #FF9900;
+	padding: 20px;
+	background-color: #FFEBE0;
+	font-size: 25px;
+	margin-left: 70px;
+	margin-top: 50px;
+	width: 600px;
+	line-height: 40px;
+	font-family: Arial, sans-serif;
+	border: 5px solid tan;
+	border-radius: 100px;
+}
+
+
+.brain img {
+	float: left;
+	width: 200;
+	margin-left: 75px;
+	margin-top: 30px;
+	border-radius: 170px;
+	border: 3px solid tan;
+
+
+
+}
+
+
+a {
+	color: #FFFFFF;	
+}
+
+
+.body {
+	float: left;
+	clear: left;
+	display: inline;
+}
+
+
+.date {
+	clear: both;
+	font-size: 13px;
+}
+
+.comments {
+	clear: both;
+}
+
+.post_content {
+	font-family: ;
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 50px;
+	padding: 50px;
+	background-color: #D46A6A;
+	margin-right: 200px;
+	margin-left: 200px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color: grey;
+	font-size: 20px;
+	clear: both;
+
+
+
+}
+
+html, body {
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 200;
+	color: white;
+
+}
+
+a {
+	text-decoration: none;
+	color: orange;
+
+}
+header{
+	background-color: #D46A6A;
+	height:150px;
+	text-align: center;
+	padding: 20px;
+	font-size: 24px;
+}
+
+li {
+	list-style-type: none;
+}
+
+.buttons{
+	float:right;
+	margin-right: 30px;
+}
+.sidebar {
+	width:300px;
+	height: 400px;
+	background: #f5f7f9;
+	border-right: 1px solid #d6dce0;
+	display: inline;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 20px;
+	font-family: Papyrus;
+	font-size: 20px;
+	line-height: 60px;
+
+}
+
+#main_content{
+	float:right;
+	margin-right: 200px;
+}
+a {			
+	color: #9eafba;
+	text-decoration: none;
+	transition: all .4s ease;
+}
+
+.body {
+	float: right;
+	display: inline;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+ h4 .title {
+	clear:both;
+	float: left;
+	display: block;
+}
+
+br {
+	clear: both;
+}
+
+.logout {
+	font-size: 20px;
+	margin-top: 50px;
+	display: inline;
+}
+
+.users {
+	font-size: 20px;
+}
+
+.picture {
+	margin-top: 50px;
+	display: inline;
+	float: right;
+	margin-right: 200px;
+	margin-bottom: 20px;
+	width: 600px;
+
+}

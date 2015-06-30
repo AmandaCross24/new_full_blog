@@ -1,0 +1,15 @@
+<div class="title">
+		Live Feed!
+	</div>
+
+<% @posts.each do |post| %>
+
+	<div class="post_content">
+		<br>
+		<br>	<%= post.title %> <br>
+		<br>	<%= post.post %> <br>
+		<br>
+	</div>
+
+
+<% end %>
